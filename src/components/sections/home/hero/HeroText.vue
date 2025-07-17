@@ -3,7 +3,7 @@ import { ref } from "vue"
 import FlipWords from "@/components/ui/flip-words/FlipWords.vue";
 import { motion } from "motion-v"
 
-const flipWordsFr = ['Secure', 'Progressive', 'Modern', 'Performant', 'Versatile', 'Scalable'];
+const flipWordsFr = ['Modern','Stunning','Secure','Versatile', 'Scalable'];
 const flipWordsEn = ['Secure', 'Progressive', 'Modern', 'Performant', 'Versatile', 'Scalable'];
 const variants = {
   hidden:{opacity: 0, x: -50},

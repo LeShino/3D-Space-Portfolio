@@ -10,7 +10,7 @@ import TheFooter from "@/components/partials/TheFooter.vue";
     <!-- 3D model zone -->
     <Hero/>
     <!-- 3D model zone -->
-    <div class="min-h-screen"></div>
+<!--    <div class="min-h-screen"></div>-->
     <TheFooter/>
   </div>
 </template>
