@@ -15,7 +15,7 @@ const currentAction = ref(actions.Respawn);
 // const currentAction = ref(actions.Run_Homeguard);
 
 //Selection de l'echelle de model
-// const modelScale = [0.007, 0.007, 0.007]
+const modelScale = [0.007, 0.007, 0.007]
 
 //Gestion de la rotation
 const degToRad = (deg: number) => (deg * Math.PI) / 180;
@@ -48,26 +48,26 @@ const detectDevice = () => {
 onMounted(() =>{
   console.log('Animations disponibles:', Object.keys(actions))
 
-  detectDevice();
+  // detectDevice();
 
   // Étape 1 : lancer l'animation initiale
-  // const intro = actions['Respawn']; // nom exact de l’animation à jouer en premier
-  // const idle = actions['Run_Base'];   // animation qui tournera en boucle ensuite
-  //
-  // if (intro && idle) {
-  //   currentAction.value = intro
-  //   intro.reset().play()
-  //
-  //   // Étape 2 : après 5 secondes, arrêter l'intro et jouer Idle en boucle
-  //   setTimeout(() => {
-  //     intro.stop()
-  //     currentAction.value = idle
-  //     idle.reset().play()
-  //   }, 2500)
-  // }
-  // else {
-  //   console.warn('Les animations "Intro" ou "Idle" sont introuvables.')
-  // }
+  const intro = actions['Respawn']; // nom exact de l’animation à jouer en premier
+  const idle = actions['Run_Base'];   // animation qui tournera en boucle ensuite
+
+  if (intro && idle) {
+    currentAction.value = intro
+    intro.reset().play()
+
+    // Étape 2 : après 5 secondes, arrêter l'intro et jouer Idle en boucle
+    setTimeout(() => {
+      intro.stop()
+      currentAction.value = idle
+      idle.reset().play()
+    }, 2500)
+  }
+  else {
+    console.warn('Les animations "Intro" ou "Idle" sont introuvables.')
+  }
 })
 </script>
 
