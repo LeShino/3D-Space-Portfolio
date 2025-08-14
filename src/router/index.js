@@ -22,7 +22,7 @@ const router = createRouter({
       path: '/test-icon', name: 'IconCloudTestView',  component: () => import('@/views/Test/IconCloudTestView.vue'),
     },
     {
-      path: '/test-3d', name: '3DTestComp',  component: () => import('@/components/sections/home/hero/ZedEmpyrean3D.vue'),
+      path: '/test-3d', name: '3DTestComp',  component: () => import('@/components/sections/home/hero/SettSpiritBlossom3D.vue'),
     },
   ],
 })

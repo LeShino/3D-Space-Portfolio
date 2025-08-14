@@ -6,7 +6,7 @@ import { BasicShadowMap, SRGBColorSpace, NoToneMapping } from 'three'
 
 import HeroText from "@/components/sections/home/hero/HeroText.vue";
 import ParallaxBackground from "@/components/sections/home/hero/ParallaxBackground.vue";
-import ZedEmpyrean3D from "@/components/sections/home/hero/ZedEmpyrean3D.vue";
+import ZedEmpyrean3D from "@/components/sections/home/hero/SettSpiritBlossom3D.vue";
 
 
 </script>
